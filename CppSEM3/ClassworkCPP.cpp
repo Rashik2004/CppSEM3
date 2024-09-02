@@ -449,3 +449,36 @@
 //    return 0;
 //}
 
+//concept of linklist and pointers
+#include <iostream>
+using namespace std;
+int square1(int n){
+    cout << "Address of methord 1: " << &n << endl;
+    n=n*n;
+    cout << "Address of methord 1: " << &n << endl;
+    return n;
+}
+int square2(int *n){
+    cout << "Address of methord 2: " << &n << endl;
+    *n=*n * *n;
+    cout << "Address of methord 2: " << &n << endl;
+    return *n;
+}
+int square3(int &n){
+    cout << "Address of methord 3: " << &n << endl;
+    n=n * n;
+    cout << "Address of methord 3: " << &n << endl;
+    return n;
+}
+int main(){
+    int n1=5;
+    cout << "The address of the n1 is: " << &n1 << endl;
+    cout << square1(n1);
+    int n2=2;
+    cout << "The address of the n2 is: " << &n2 << endl;
+    cout << square2(&n2);
+    int n3=8;
+    cout << "The address of the n3 is: " << &n3 << endl;
+    cout << square3(n3);
+    
+}

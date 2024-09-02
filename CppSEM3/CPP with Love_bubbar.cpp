@@ -749,20 +749,20 @@
 //-----------------------BITWISE__OPERATOR---------------------
 
 //-----------Programme explaining all the bitwise operator-----------
-#include<iostream>
-using namespace std;
-int main(){
-    int a;
-    cout << "Enter the value of a: ";
-    cin >> a;
-    int b;
-    cout << "Enter the value of b: ";
-    cin >> b;
-    cout << "a & b = "<< (a&b) << endl;
-    cout << "a | b = "<< (a|b) << endl;
-    cout << " ~a = "<< ~a << endl;
-    cout << "a ^ b = "<< (a^b) << endl;
-    //shift operator left shift right shift
-    cout << "a << b = "<< (a<<b) << endl;
-    cout << "a >> b = "<< (a>>b) << endl;
-}
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    int a;
+//    cout << "Enter the value of a: ";
+//    cin >> a;
+//    int b;
+//    cout << "Enter the value of b: ";
+//    cin >> b;
+//    cout << "a & b = "<< (a&b) << endl;
+//    cout << "a | b = "<< (a|b) << endl;
+//    cout << " ~a = "<< ~a << endl;
+//    cout << "a ^ b = "<< (a^b) << endl;
+//    //shift operator left shift right shift
+//    cout << "a << b = "<< (a<<b) << endl;
+//    cout << "a >> b = "<< (a>>b) << endl;
+//}
