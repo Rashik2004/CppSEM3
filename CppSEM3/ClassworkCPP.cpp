@@ -450,35 +450,104 @@
 //}
 
 //concept of linklist and pointers
+//#include <iostream>
+//using namespace std;
+//int square1(int n){
+//    cout << "Address of methord 1: " << &n << endl;
+//    n=n*n;
+//    cout << "Address of methord 1: " << &n << endl;
+//    return n;
+//}
+//int square2(int *n){
+//    cout << "Address of methord 2: " << &n << endl;
+//    *n=*n * *n;
+//    cout << "Address of methord 2: " << &n << endl;
+//    return *n;
+//}
+//int square3(int &n){
+//    cout << "Address of methord 3: " << &n << endl;
+//    n=n * n;
+//    cout << "Address of methord 3: " << &n << endl;
+//    return n;
+//}
+//int main(){
+//    int n1=5;
+//    cout << "The address of the n1 is: " << &n1 << endl;
+//    cout << square1(n1);
+//    int n2=2;
+//    cout << "The address of the n2 is: " << &n2 << endl;
+//    cout << square2(&n2);
+//    int n3=8;
+//    cout << "The address of the n3 is: " << &n3 << endl;
+//    cout << square3(n3);
+//    
+//}
+//-----------------------------------Creating a basic linked list------------------------------------------
+//#include <iostream>
+//using namespace std;
+//struct node{
+//    int data;
+//    node*next;
+//};
+//int main(){
+//    node*temp=nullptr;
+//    node*first=new node();
+//    node*second=new node();
+//    node*third=new node();
+//    first->data=4;
+//    second->data=9;
+//    third->data=8;
+//    first->next=second;
+//    second->next=third;
+//    third->next=nullptr;
+//    temp=first;
+//    while (temp!=nullptr) {
+//        cout<<temp->data<<" ";
+//        temp = temp->next;
+//    }
+//}
+
+//Creating an user defined linked list----------condition based---------------
 #include <iostream>
 using namespace std;
-int square1(int n){
-    cout << "Address of methord 1: " << &n << endl;
-    n=n*n;
-    cout << "Address of methord 1: " << &n << endl;
-    return n;
-}
-int square2(int *n){
-    cout << "Address of methord 2: " << &n << endl;
-    *n=*n * *n;
-    cout << "Address of methord 2: " << &n << endl;
-    return *n;
-}
-int square3(int &n){
-    cout << "Address of methord 3: " << &n << endl;
-    n=n * n;
-    cout << "Address of methord 3: " << &n << endl;
-    return n;
-}
+struct node{
+    int data;
+    node*next;
+};
 int main(){
-    int n1=5;
-    cout << "The address of the n1 is: " << &n1 << endl;
-    cout << square1(n1);
-    int n2=2;
-    cout << "The address of the n2 is: " << &n2 << endl;
-    cout << square2(&n2);
-    int n3=8;
-    cout << "The address of the n3 is: " << &n3 << endl;
-    cout << square3(n3);
-    
+    char choice;
+    node *head=nullptr;
+    node *temp=nullptr;
+    do {
+        cout << "Enter the choice: ";
+        cin >> choice;
+        if (choice== 'Y' || choice== 'y' ) {
+            node *newnode=new node();
+            cin >> newnode->data;
+            newnode -> next=nullptr;
+            if (head==nullptr) {
+                head=newnode;
+            }
+            else{
+                temp=head;
+                while (temp->next!=nullptr) {
+                    temp=temp->next;
+                }
+                temp->next = newnode;
+            }
+        }
+        else if (choice=='N' || choice=='n'){
+            cout<< "you terminated the programe: ";
+            break;
+        }
+        else{
+            cout << "invalid option";
+            break;
+        }
+    } while (choice);
+    temp=head;
+    while (temp!=nullptr) {
+        cout<<temp->data<<" ";
+        temp=temp->next;
+    }
 }

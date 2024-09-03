@@ -385,3 +385,14 @@
 //
 //    return 0;
 //}
+//----------------POinters--------------------
+//#include <iostream>
+//using namespace std;
+//int main(){
+//    int a=7;
+//    int *ptr=&a;
+//    cout << "a: "<<a<<endl;
+//    cout << "&a: "<<&a<<endl;
+//    cout << "ptr: "<<ptr<<endl;
+//    cout << "&ptr: "<<&ptr<<endl;
+//}
