@@ -508,46 +508,46 @@
 //}
 
 //Creating an user defined linked list----------condition based---------------
-#include <iostream>
-using namespace std;
-struct node{
-    int data;
-    node*next;
-};
-int main(){
-    char choice;
-    node *head=nullptr;
-    node *temp=nullptr;
-    do {
-        cout << "Enter the choice: ";
-        cin >> choice;
-        if (choice== 'Y' || choice== 'y' ) {
-            node *newnode=new node();
-            cin >> newnode->data;
-            newnode -> next=nullptr;
-            if (head==nullptr) {
-                head=newnode;
-            }
-            else{
-                temp=head;
-                while (temp->next!=nullptr) {
-                    temp=temp->next;
-                }
-                temp->next = newnode;
-            }
-        }
-        else if (choice=='N' || choice=='n'){
-            cout<< "you terminated the programe: ";
-            break;
-        }
-        else{
-            cout << "invalid option";
-            break;
-        }
-    } while (choice);
-    temp=head;
-    while (temp!=nullptr) {
-        cout<<temp->data<<" ";
-        temp=temp->next;
-    }
-}
+//#include <iostream>
+//using namespace std;
+//struct node{
+//    int data;
+//    node*next;
+//};
+//int main(){
+//    char choice;
+//    node *head=nullptr;
+//    node *temp=nullptr;
+//    do {
+//        cout << "Enter the choice: ";
+//        cin >> choice;
+//        if (choice== 'Y' || choice== 'y' ) {
+//            node *newnode=new node();
+//            cin >> newnode->data;
+//            newnode -> next=nullptr;
+//            if (head==nullptr) {
+//                head=newnode;
+//            }
+//            else{
+//                temp=head;
+//                while (temp->next!=nullptr) {
+//                    temp=temp->next;
+//                }
+//                temp->next = newnode;
+//            }
+//        }
+//        else if (choice=='N' || choice=='n'){
+//            cout<< "you terminated the programe: ";
+//            break;
+//        }
+//        else{
+//            cout << "invalid option";
+//            break;
+//        }
+//    } while (choice);
+//    temp=head;
+//    while (temp!=nullptr) {
+//        cout<<temp->data<<" ";
+//        temp=temp->next;
+//    }
+//}
