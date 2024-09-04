@@ -766,3 +766,62 @@
 //    cout << "a << b = "<< (a<<b) << endl;
 //    cout << "a >> b = "<< (a>>b) << endl;
 //}
+
+//The coversion of decimal numbers to binary conversion
+//#include<iostream>
+//#include <math.h>
+//using namespace std;
+//int main(){
+//    int n;
+//    cout << "enter the value of a: ";
+//    cin >> n;
+//    int i=0;
+//    int ans=0;
+//    while (n!=0) {
+//        int bit = n & 1;
+//        ans=bit * (pow(10,i))+ans;
+//        n=n>>1;
+//        i++;
+//    }
+//    cout << ans << endl;
+//}
+//The coversion of binary to decimal numbers conversion
+
+//#include <iostream>
+//#include <math.h>
+//using namespace std;
+//int main(){
+//    int n;
+//    cout << "enter the value of n:" ;
+//    cin >> n;
+//    int ans=0;
+//    int i=0;
+//    while (n!=0) {
+//        int digit=n%10;
+//        if (digit == 1) {
+//            ans=ans + pow(2, i);
+//        }
+//        n=n/10;
+//        i++;
+//    }
+//    cout  << "The binary conversion of decimal is: " << ans;
+//}
+
+//Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside
+//the signed 32-bit integer range [-2^31, 2^31 - 1], then return 0...
+#include <iostream>
+using namespace std;
+int main(){
+    int n;
+    cout << "enter the value of n: " ;
+    cin >> n;
+    int ans=0;
+    int i=0;
+    while (n != 0) {
+        int digit=n%10;
+        ans= (ans*10) + digit;
+        n=n/10;
+    }
+    cout << ans << endl;
+}
+
