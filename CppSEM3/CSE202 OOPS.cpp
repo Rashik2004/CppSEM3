@@ -396,3 +396,20 @@
 //    cout << "ptr: "<<ptr<<endl;
 //    cout << "&ptr: "<<&ptr<<endl;
 //}
+
+//----------------------------initialising pointers-------------------------------
+//#include <iostream>
+//using namespace std;
+//int main(){
+//    int a[20];
+//    int *p;
+//    p=a;
+//    int *p1;
+//    p1=&a[10];
+//    cout << p1-p;
+//    cout << p << endl;
+//    cout << p1-10;
+//    cout << p1++;
+//}
+
+
