@@ -412,4 +412,56 @@
 //    cout << p1++;
 //}
 
+//#include <iostream>
+//using namespace std;
+//int main(){
+//    int x=7;
+//    char y='y';
+//    void *ptr;
+//    ptr=&x;
+//    cout << "address of pointer: " << &ptr << endl;
+//    ptr=&y;
+//    cout << "address of pointer: " << &ptr << endl;
+//}
 
+//#include <iostream>
+//using namespace std;
+//int main(){
+//    void *p=NULL;
+//    int i=2;
+//    int *ip=&i;
+//    p=ip;
+//    cout << *p;
+//    cout << *((int*)p);
+//}
+
+//#include <iostream>
+//using namespace std;
+//int main(){
+//    int a=10;
+//    void *ptr=&a;
+//    cout<< ptr;
+//}
+
+//#include <iostream>
+//using namespace std;
+//int main(){
+//    int a=10;
+//    int *p;
+//    p=&a;
+//    cout << p <<endl << *p << endl<< &p;
+//    int &b=a;
+//    a=a+2;
+//    cout << b;
+//}
+
+#include <iostream>
+using namespace std;
+int main(){
+    int a=10,b=20;
+    int *ptr=&a;
+    int &ref=b;
+    ptr++;
+    ref++;
+    cout << a << " "<<b;
+}
