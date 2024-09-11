@@ -455,13 +455,56 @@
 //    cout << b;
 //}
 
-#include <iostream>
-using namespace std;
-int main(){
-    int a=10,b=20;
-    int *ptr=&a;
-    int &ref=b;
-    ptr++;
-    ref++;
-    cout << a << " "<<b;
-}
+//#include <iostream>
+//using namespace std;
+//int main(){
+//    int a=10,b=20;
+//    int *ptr=&a;
+//    int &ref=b;
+//    ptr++;
+//    ref++;
+//    cout << a << " "<<b;
+//}
+
+
+//this pointer
+//#include <iostream>
+//using namespace std;
+//class Area{
+//    int l,b;
+//public:
+//    Area(int l, int b){
+//        this->l=l;
+//        this->b=b;
+//    }
+//    void Display(){
+//        cout << l*b <<endl;
+//    }
+//};
+//int main(){
+//    Area a(5,6);
+//    a.Display();
+//}
+
+
+//#include <iostream>
+//using namespace std;
+//class Area{
+//    int l,b;
+//public:
+//    Area(int l, int b){
+//        this->l=l;
+//        this->b=b;
+//    }
+//    Area& set1(int l){
+//        this->l=l;
+//        return* this;
+//    }
+//    void Display(){
+//        cout << l*b <<endl;
+//    }
+//};
+//int main(){
+//    Area a(5,6);
+//    a.Display();
+//}

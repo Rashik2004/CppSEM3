@@ -827,9 +827,129 @@
 //}
 
 //covert the decimal into binary and binary into decimal
-#include <iostream>
-using namespace std;
-int main(){
-    int n;//number
-    
-}
+//#include <iostream>
+//using namespace std;
+//int main(){
+//    int n;//number
+//    
+//}
+
+//#include <iostream>
+//using namespace std;
+//int main(){
+//    int num;
+//    cout << "Enter the day number: ";
+//    cin >> num;
+//    switch (num) {
+//        case 1:
+//            cout << "Today is Sunday. "<<endl;
+//            break;
+//        case 2:
+//            cout << "Today is monday. " << endl;
+//            break;
+//        case 3:
+//            cout << "Today is Tuesday. " << endl;
+//            break;
+//        case 4:
+//            cout << "Today is Wednesday. " << endl;
+//            break;
+//        case 5:
+//            cout << "Today is Thrusday. " << endl;
+//            break;
+//        case 6:
+//            cout << "Today is Friday. " << endl;
+//            break;
+//        case 7:
+//            cout << "Today is Saturday. " << endl;
+//            break;
+//        default:
+//            cout << "Enter a valid day number between 1-7.";
+//            break;
+//    }
+//
+//}
+
+//making basic calculator:
+//#include <iostream>
+//using namespace std;
+//int main(){
+//    int operation;
+//    cout <<"1 = to use operator +"<<endl;
+//    cout <<"2  = to use operator -"<<endl;
+//    cout <<"3 = to use operator *"<<endl;
+//    cout <<"4 = to use operator /"<<endl;
+//    cin >> operation;
+//    int a,b;
+//    cout << "enter the value of a: ";
+//    cin >> a;
+//    cout << "enter the value of b: ";
+//    cin >> b;
+//    switch (operation) {
+//        case 1:
+//            cout << a+b << endl;
+//            break;
+//        case 2:
+//            cout << a-b << endl;
+//            break;
+//        case 3:
+//            cout << a*b << endl;
+//            break;
+//        case 4:
+//            if (b==0) {
+//                cout <<"zero based error.";
+//                break;
+//            }
+//            else{
+//                cout << a/b <<endl;
+//            }
+//            break;
+//        default:
+//            break;
+//    }
+//}
+
+//finding the nCr ...
+//#include <iostream>
+//using namespace std;
+//
+//int factorial(int a){
+//    int fact = 1;
+//    while (a>0) {
+//        fact*=a;
+//        a--;
+//    }
+//    return fact;
+//}
+//
+//int main(){
+//    int n,r;
+//    cout << "Enter the value of n: ";
+//    cin >> n;
+//    cout << "Enter the value of r: ";
+//    cin >> r;
+//    cout << "Factoorial of a number is: " << factorial(n) << endl;
+//    int ncr=(factorial(n))/(factorial(r)*(factorial(n-r)));
+//    cout << "The value of ncr: " <<ncr << endl;
+//}
+
+//fibonaci series
+//#include <iostream>
+//using namespace std;
+//int fibonachi(int n){
+//    int a=0;
+//    int b=1;
+//    cout <<a<<endl;
+//    cout << b <<endl;
+//    for(int i=0; i<n;i++){
+//        int c=a+b;
+//        cout << c << endl;
+//        a=b;
+//        b=c;
+//    }
+//    return a;
+//}
+//int main(){
+//    int n;
+//    cin >> n;
+//    cout << fibonachi(n);
+//}
