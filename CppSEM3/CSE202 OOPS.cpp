@@ -508,3 +508,149 @@
 //    Area a(5,6);
 //    a.Display();
 //}
+
+
+//
+//#include <iostream>
+//#include <string.h>
+//using namespace std;
+//int main(){
+//    string s1="abcdef";
+//    string s2="123456";
+//    
+//    s1.insert(4, "******");
+//    cout << s1 << endl;
+//    cout << endl;
+//    
+//    s1.erase(1,2);//print which index(1) to which index(2).
+//    cout << s1 << endl;
+//    cout << endl;
+//    
+//    s2.replace(1, 2, "36");
+//    cout << s2 << endl;
+//    cout << endl;
+//    
+//    s1.append(s2,2,3);//here 2 is the strating index and 3 is the now of indexes they want to print.
+//    cout << s1 << endl;
+//    cout << endl;
+//    
+//    cout << s2.max_size() << endl;
+//    cout << endl;
+//    
+//    s2.swap(s1);
+//    cout << s2 << endl;
+//    cout << endl;
+//    
+//    s1.erase();
+//    if (s1.empty()) {
+//        cout << "Empty"<<endl;
+//    }
+//    else{
+//        cout << s1 << endl;
+//    }
+//    cout << endl;
+//    
+//    //second object strings
+//    string s3="12345";
+//    string s4="4567890";
+//    
+//    cout << s3.compare(s4)<<endl;
+//    cout << endl;
+//    
+//    string A="qwerty";
+//    string B="wearomea";
+//    
+//    cout << A.find('q')<<endl;
+//    cout << endl;
+//    
+//    cout << A.rfind('r')<<endl;
+//    cout << endl;
+//    
+//    cout << B.find_first_of('e')<<endl;
+//    cout << endl;
+//    
+//    cout << B.find_last_of('e')<<endl;
+//    cout << endl;
+//    
+//    B.push_back('c');//we canot use push_back with cout or endl; it is used independently
+//    cout << B <<endl;
+//    cout << endl;
+//    
+//    
+//    return 0;
+//}
+
+//#include<iostream>
+//using namespace std;
+//void printname(string name){
+//    cout << "Hello " << name << endl;
+//}
+//void printnumber(long int number){
+//    cout << "your number is: " << number << endl;
+//}
+//int main() {
+//    string name2;
+//    long int phoneNumber;
+//    cin >> name2;
+//    cin >> phoneNumber;
+//    printname(name2);
+//    printnumber(phoneNumber);
+//    return 0;
+//}
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//class ABC{
+//    int s,l,b;
+//public:
+//    ABC(int side){
+//        s=side;
+//        cout << "comnstructor called" << endl;
+//    }
+//    void square(){
+//        cout <<"Sq. area: "<<s*s<<endl;
+//    }
+//    ABC(int len,int width){
+//        l=len;
+//        b=width;
+//    }
+//    void recare(){
+//        cout << "Rec Area: " << l*b<<endl;
+//    }
+//};
+//int main(){
+//    ABC obj(4);
+//    ABC t(2,5);
+//    obj.square();
+//    t.recare();
+//}
+
+//file handling
+//#include<iostream>
+//#include<fstream>
+//using namespace std;
+//int main(){
+//    fstream file("file.txt",ios::in |ios::out | ios::app);
+//    string line;
+//    if(file.is_open()){
+//        file<<"hello World";
+//        cout<<"file exists"<<endl;
+//        cout<<file.tellg()<<endl;
+//        file.seekg(0,ios::beg);
+//        cout<<file.tellg()<<endl;
+//        while(getline(file,line)){
+//            cout<<line<<endl;
+//        }
+//        if(file.eof()){
+//            cout<<"end";}
+//        }
+//        else{
+//        cout<<"error opening file";
+//        }
+//        file.close();
+//}
+
+//
+

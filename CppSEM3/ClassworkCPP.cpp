@@ -551,3 +551,54 @@
 //        temp=temp->next;
 //    }
 //}
+
+//insertion at the end and traversal of a linked list
+//#include<iostream>
+//using namespace std;
+//struct node{
+//    int data;
+//    node*next;
+//};
+//void appendnode(node*&tail, int data){
+//    node*newnode=new node();
+//    newnode->data=data;
+//    newnode->next=newnode;
+//    if (tail == nullptr) {
+//        tail=newnode;
+//    }
+//    else{
+//        newnode->next=tail->next;
+//        tail->next=newnode;
+//        tail = newnode;
+//    }
+//}
+////adding node at beggining
+//void appendatstart(node*&tail,int data){
+//    node*newnode= new node();
+//    newnode->data=data;
+//    newnode->next=  tail->next;
+//    tail->next=newnode;
+//}
+//
+//void printlist(node*tail){
+//    node*temp=tail->next;
+//    do{
+//        cout<<temp->data<<" ";
+//        temp=temp->next;
+//    }while(temp!=tail->next);
+//}
+//
+//int main(){
+//    int n;
+//    cin >> n;
+//    int data;node*tail=nullptr;
+//    for (int i=0; i<n; i++) {
+//        cin >> data;
+//        appendnode(tail, data);
+//    }
+//    printlist(tail);
+//    int value;
+//    cin >> value;
+//    appendatstart(tail, value);
+//    printlist(tail);
+//}
