@@ -602,3 +602,142 @@
 //    appendatstart(tail, value);
 //    printlist(tail);
 //}
+
+//Queue
+
+//#include <iostream>
+//using namespace std;
+//int front=-1,rear=-1;
+//bool isEmpty(){
+//    if (front==-1 || front >rear) {
+//        return true;
+//    }
+//    return false;
+//}
+//bool isFull(int n){
+//    if (rear >= n-1) {
+//        return true;
+//    }
+//    return false;
+//}
+//void enqueueRear(int queue[], int n, int value){
+//    if (isFull(n)) {
+//        cout << "Queue is full";
+//        return;
+//    }
+//    if (isEmpty()) {
+//        front = 0;
+//        rear = 0;
+//    }
+//    else{
+//        rear ++;
+//    }
+//    queue[rear]=value;
+//    cout << value <<"is the inserted value.";
+//}
+//
+//void dequeue(int queue[],int n){
+//    if (isEmpty()) {
+//        cout << "Empty";
+//    }
+//    else{
+//        cout << queue[front] << "is deleted";
+//        front  ++;
+//    }
+//}
+//void display(int queue[]){
+//    if (isEmpty()) {
+//        cout << "The queue is empty.";
+//    }
+//    else{
+//        for (int i=front; i<=rear; i++) {
+//            cout << queue[front]<<" ";
+//        }
+//    }
+//}
+//int main(){
+//    int choice,value;
+//    int n;
+//    cout <<"enter the value of n: ";
+//    cin >> n;
+//    int queue[n];
+//    do {
+//        cout << "1.Queue Menu" <<endl;
+//        cout << "2.dequeue" <<endl;
+//        cout << "3.display" <<endl;
+//        cout << "4.exit" <<endl;
+//        cout << "enter the choice:"
+//        cin << choice;
+//    }while();
+//}
+
+
+//#include <iostream>
+//using namespace std;
+//int front=1,rear=1;
+//bool isEmpty(){
+//    if (front==-1) {
+//        return true;
+//    }
+//    return false;
+//}
+//bool isFull(int n){
+//    if ((front==rear+1) || (front == 0 && rear == n-1)){
+//        return true;
+//    }
+//    return false;
+//}
+//
+//void enqueueRear(int dequeue[], int value, int n){
+//    if (isFull(n)) {
+//        cout << "Queue is full";
+//        return;
+//    }
+//    if (isEmpty()) {
+//        front=rear=0;
+//    }
+//    else if(rear==n-1){
+//        rear=0;
+//    }
+//    else{
+//        rear ++;
+//    }
+//    dequeue[rear]=value;
+//    cout << value << "is inserted at rear";
+//}
+//void enqueueFront(int dequeue[],int n, int value){
+//    if (isFull(n)) {
+//        cout << "Queue is full";
+//        return;
+//    }
+//    if (isEmpty()) {
+//        front=rear=0;
+//    }
+//    else if (front==0){
+//        front=n-1;
+//    }
+//    else{
+//        front--;
+//    }
+//    dequeue[front]=value;
+//    cout << value<<" is inserted at front";
+//}
+//void dequeueFront(int dequeue[],int n){
+//    if (isEmpty()) {
+//        cout <<"empty cannot delete";
+//        return;
+//    }
+//    cout << dequeue[front]<<"is deleted";
+//    if (front==rear) {
+//        front=-1;
+//        rear=-1;
+//    }
+//    else if (front==n-1){
+//        front =0;
+//    }
+//    else{
+//        front++;
+//    }
+//}
+//
+//void dequeueRear(int dequeue)

@@ -654,3 +654,23 @@
 
 //
 
+#include<iostream>
+using namespace std;
+class ABC{
+    float m;
+public:
+    ABC(float x){
+        m=x;
+    }
+    friend float operator++(ABC &obj);
+};
+float operator++(ABC &obj){
+    obj.m=obj.m+5;
+    return obj.m;
+}
+int main(){
+    ABC o(3.5);
+    float z=++o;
+    cout <<z<<endl;
+    return 0;
+}
