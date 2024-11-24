@@ -676,9 +676,166 @@
 //}
 
 
-#include<iostream>
-using namespace std;
+//#include<iostream>
+//using namespace std;
+//
+//class Animal {
+//public:
+//    void sound(){
+//        cout << "animal makes sound"<<endl;
+//    }
+//};
+//class Dog : public Animal {
+//public:
+//    void sound(){
+//        cout << "Woof"<<endl;
+//    }
+//};
+//
+//int main(){
+//    Animal *a = new Dog;
+//    a->sound();
+//    delete a;
+//    a=NULL;
+//}
 
-int main(){
-    
-}
+//#include<iostream>
+//using namespace std;
+//int main(){
+//    float a,b;
+//    cin >> a >> b;
+//    try {
+//        if (a==b) {
+//            throw "Not possible";
+//        }
+//        else{
+//            cout << a/b;
+//        }
+//        } catch (float msg) {
+//            cout << msg;
+//        }
+//    } catch (const char *msg) {
+//        cout << msg;
+//    }
+//}
+
+//#include<iostream>
+//using namespace std;
+//void div(float a,float b){
+//    if (b==0) {
+//        throw "Not possible";
+//    }
+//    else{
+//        cout << a/b;
+//    }
+//}
+//
+//int main(){
+//    float a,b;
+//    cin >> a >> b;
+//}
+
+//#include<iostream>
+//using namespace std;
+//
+//void div(float a, float b){
+//    if(b==0){
+//        throw ("Not possible");
+//    }
+//    if(b<0){
+//        throw ("negative denominator");
+//    }else{
+//        cout << a/b;
+//    }
+//}
+//
+//int main(){
+//    float a,b;
+//    cin >> a >> b;
+//    
+//    int x = a-b;
+//    try{
+//        div(a,b);
+//    }
+//    catch(const char *msg){
+//        cout << msg;
+//    }
+//    
+//    return 0;
+//}
+
+//read try through catch rethrouing exception..
+
+//concept of templates
+//#include <iostream>
+//using namespace std;
+//template<typename T>
+//
+//T display(T a,T b){
+//    return a*b;
+//    //return a;
+//}
+//
+//int main(){
+//    //cout << display(3) <<endl;
+//    cout << display(3,6) <<endl;
+//    cout << display(3.5,5.6) <<endl;
+//    //cout << display(3.5) <<endl;
+//}
+
+
+//template Query 2
+//#include <iostream>
+//using namespace std;
+//template <class T, class Z>
+//
+//T display(T a, Z b){
+//    return a*b;
+//}
+//
+//int main(){
+//    cout << display(4,4.5)<<endl;
+//    cout << display(5.4,7.8)<<endl;
+//    cout << display('t','u')<<endl;
+//}
+
+//#include <iostream>
+//using namespace std;
+//template <class T, class Z>
+//
+//T display(T a){
+//    cout << "Template" << a << endl;
+//}
+//
+//void display(int b){
+//    cout<<"Ordinary: "<< b <<endl;
+//}
+//
+//int main(){
+//    display(4);
+//    display('t');
+//}
+
+//#include <iostream>
+//using namespace std;
+//template <class T>
+//
+//class ABC{
+//    T a;
+//public:
+//    ABC(T x){
+//        a=x;
+//    }
+//    void show(){
+//        cout << a <<endl;
+//    }
+//};
+//int main(){
+//    ABC <int> iobj(3);
+//    iobj.show();
+//    ABC<float> fobj(3.5);
+//    fobj.show();
+//    ABC<char> cabj('A');
+//    cabj.show();
+//}
+

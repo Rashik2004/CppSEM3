@@ -14,6 +14,8 @@
 		A720CDFF2CD0A117005F8B36 /* Linkedlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A720CDFE2CD0A10C005F8B36 /* Linkedlist.cpp */; };
 		A720CE012CD0A12E005F8B36 /* Stack and Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A720CE002CD0A122005F8B36 /* Stack and Queue.cpp */; };
 		A720CE032CD0A14D005F8B36 /* Tress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A720CE022CD0A143005F8B36 /* Tress.cpp */; };
+		A7AE60CA2CF11E8D00A939B0 /* Graphs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7AE60C92CF11E8400A939B0 /* Graphs.cpp */; };
+		A7B41FA82CF25AD400BD9FC0 /* Recursion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7B41FA72CF25ACB00BD9FC0 /* Recursion.cpp */; };
 		A7D58E412CD8A22900039191 /* Heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7D58E402CD8A22200039191 /* Heap.cpp */; };
 		A7E98A042C843BEB00CF4AA7 /* Arrays.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7E98A022C843BEB00CF4AA7 /* Arrays.cpp */; };
 /* End PBXBuildFile section */
@@ -49,7 +51,8 @@
 		A720CE002CD0A122005F8B36 /* Stack and Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Stack and Queue.cpp"; sourceTree = "<group>"; };
 		A720CE022CD0A143005F8B36 /* Tress.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tress.cpp; sourceTree = "<group>"; };
 		A79EADAC2C7A6B03003705A2 /* DSA_array */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSA_array; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7BF61A92CA5275E00B5596E /* file.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = file.txt; sourceTree = "<group>"; };
+		A7AE60C92CF11E8400A939B0 /* Graphs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Graphs.cpp; sourceTree = "<group>"; };
+		A7B41FA72CF25ACB00BD9FC0 /* Recursion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Recursion.cpp; sourceTree = "<group>"; };
 		A7D58E402CD8A22200039191 /* Heap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Heap.cpp; sourceTree = "<group>"; };
 		A7E98A022C843BEB00CF4AA7 /* Arrays.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Arrays.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,7 +99,7 @@
 				A703B0382C6A7B0900315941 /* CPP with Love_bubbar.cpp */,
 				A703B03A2C6B672F00315941 /* ClassworkCPP.cpp */,
 				A703B03D2C6C6E7E00315941 /* CSE202 OOPS.cpp */,
-				A7BF61A92CA5275E00B5596E /* file.txt */,
+				A7B41FA72CF25ACB00BD9FC0 /* Recursion.cpp */,
 				A7E98A032C843BEB00CF4AA7 /* DSA */,
 			);
 			path = CppSEM3;
@@ -110,6 +113,7 @@
 				A720CE002CD0A122005F8B36 /* Stack and Queue.cpp */,
 				A720CE022CD0A143005F8B36 /* Tress.cpp */,
 				A7D58E402CD8A22200039191 /* Heap.cpp */,
+				A7AE60C92CF11E8400A939B0 /* Graphs.cpp */,
 			);
 			path = DSA;
 			sourceTree = "<group>";
@@ -196,7 +200,9 @@
 				A703B03E2C6C6E7E00315941 /* CSE202 OOPS.cpp in Sources */,
 				A703B0322C69B6E600315941 /* main.cpp in Sources */,
 				A703B03C2C6B672F00315941 /* ClassworkCPP.cpp in Sources */,
+				A7AE60CA2CF11E8D00A939B0 /* Graphs.cpp in Sources */,
 				A720CE032CD0A14D005F8B36 /* Tress.cpp in Sources */,
+				A7B41FA82CF25AD400BD9FC0 /* Recursion.cpp in Sources */,
 				A703B0392C6A7B0900315941 /* CPP with Love_bubbar.cpp in Sources */,
 				A720CE012CD0A12E005F8B36 /* Stack and Queue.cpp in Sources */,
 				A720CDFF2CD0A117005F8B36 /* Linkedlist.cpp in Sources */,
