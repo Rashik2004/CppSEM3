@@ -652,25 +652,221 @@
 //        file.close();
 //}
 
-//
+//function overloading using friend function...
 
-#include<iostream>
-using namespace std;
-class ABC{
-    float m;
-public:
-    ABC(float x){
-        m=x;
-    }
-    friend float operator++(ABC &obj);
-};
-float operator++(ABC &obj){
-    obj.m=obj.m+5;
-    return obj.m;
-}
-int main(){
-    ABC o(3.5);
-    float z=++o;
-    cout <<z<<endl;
-    return 0;
-}
+//#include<iostream>
+//using namespace std;
+//class ABC{
+//    float m;
+//public:
+//    ABC(float x){
+//        m=x;
+//    }
+//    friend float operator++(ABC &obj);
+//};
+//float operator++(ABC &obj){
+//    obj.m=obj.m+5;
+//    return obj.m;
+//}
+//int main(){
+//    ABC o(3.5);
+//    float z=++o;
+//    cout <<z<<endl;
+//    return 0;
+//}
+
+
+//type conversion in c++...
+
+//#include<iostream>
+//#include<typeinfo>
+//using namespace std;
+//int main(){
+//    int y=6;
+//    char x=(int)y;
+//    cout << x << endl;
+//    
+//    int a1=99;
+//    //char b=(int)a;
+//    char b1=static_cast<char>(a1);
+//    cout << b1 << endl;
+//    
+//    char a='A';
+//    //char b=(int)a;
+//    int b=static_cast<int>(a);
+//    cout << b << endl;
+//    return 0;
+//}
+
+//inheritence
+//#include<iostream>
+//using namespace std;
+//class animal{
+//public:
+//    int x;
+//    animal(){
+//        x=0;
+//    }
+//    void eat(){
+//        cout << "Eaten" <<endl;
+//    }
+//};
+//class Dog: public animal{
+//public:
+//    void status(){
+//        eat();
+//        cout << x;
+//    }
+//};
+//int main(){
+//    Dog dl;
+//    dl.eat();
+//}
+
+//#include<iostream>
+//using namespace std;
+//class animal{
+//protected:
+//    int x;
+//    animal(){
+//        x=0;
+//    }
+//    void eat(){
+//        cout << "Eaten" <<endl;
+//    }
+//};
+//class Dog: public animal{
+//protected:
+//    void status(){
+//        eat();
+//        cout << x;
+//    }
+//};
+//int main(){
+//    Dog dl;
+//    dl.eat();
+//}
+
+//#include<iostream>
+//using namespace std;
+//class animal{
+//private:
+//    int x;
+//    animal(){
+//        x=0;
+//    }
+//    void eat(){
+//        cout << "Eaten" <<endl;
+//    }
+//};
+//class Dog: private animal{
+//public:
+//    void status(){
+//        eat();
+//        cout << x;
+//    }
+//};
+//int main(){
+//    Dog dl;
+//    dl.eat();
+//}
+
+
+//#include<iostream>
+//using namespace std;
+//
+//class Animal{
+//public:
+//void status(){
+//cout << " Walks";
+//}
+//};
+//class Dog{
+//public:
+//void status(){
+//cout << " barks";
+//}
+//};
+//class German: public Animal,public Dog{
+//public:
+//void display(){
+//cout << " Eats";
+//
+//}
+//};
+//int main(){
+//German b;
+//b.Animal::status();
+//b.Dog::status();
+//}
+
+//#include <iostream>
+//using namespace std;
+//class Animal{
+//public:
+//void status(){
+//cout << " Walks";
+//cout << endl;
+//}
+//};
+//class Dog{
+//public:
+//void status(){
+//cout << " barks";
+//cout << endl;
+//}
+//};
+//class German: public Animal,public Dog{
+//public:
+//void display(){
+//cout << " Eats";
+//cout << endl;
+//}
+//};
+//int main(){
+//German b;
+//b.Animal::status();
+//b.Dog::status();
+//}
+
+//#include<iostream>
+//using namespace std;
+//
+//int main(){
+//    int size;
+//    cin >> size;
+//    int *arr=new int[size];
+//    if(arr==NULL){
+//        cout << "no memor allocated: ";
+//    }
+//    else{
+//        for (int i=0; i<size; i++) {
+//            cin>>arr[i];
+//        }
+//        for (int i=0; i<size; i++) {
+//            cout<<arr[i]<<" ";
+//        }
+//    }
+//    delete[] arr;
+//    arr=NULL;
+//}
+
+
+// #include <iostream>
+// using namespace std;
+// class ABC{
+//    int x,y;
+// public:
+//    ABC(){
+//        cout << "construction" << endl;
+//    }
+//    ~ABC(){
+//        cout << "Deconstructor" << endl;
+//    }
+// };
+// int  main(){
+//    int n,i;
+//    cin >>n;
+//    ABC *a=new ABC[n];
+//    delete [] a;
+// }

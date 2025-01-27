@@ -375,7 +375,7 @@
 //    return 0;
 //}
 
-//----------------------------to find frequency of occuring of unique elements  in ana array----------------------------
+//----------------------------to find frequency of occuring of unique elements  in an array----------------------------
 
 //#include <iostream>
 //using namespace std;
@@ -741,3 +741,57 @@
 //}
 //
 //void dequeueRear(int dequeue)
+
+
+//recurrsion
+//tower of hanoi
+//#include<iostream>
+//using namespace std;
+//
+//void toh(int n,char source,char destination,char auxilary){
+//    if(n==0){
+//        return;
+//    }
+//    toh(n-1, source, auxilary, destination);
+//    cout <<"move disk " << n << " from " << source << " to " << destination << endl;
+//    toh(n-1, auxilary, destination, source);
+//}
+//
+//int main(){
+//    int n;
+//    cin >> n;
+//    toh(n, 'A', 'C', 'B');
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//int partition(int a[],int lb,int ub){
+//    int pivot=a[lb];
+//    int start=lb;
+//    int end=ub;
+//    while (start<end) {
+//        while (a[start]<=pivot) {
+//            start ++;
+//        }
+//        while (a[end] >pivot) {
+//            end--;
+//        }
+//        if (start < end) {
+//            swap(a[start],a[end]);
+//        }
+//    }
+//    if (start > end) {
+//        swap(a[lb],a[end]);
+//    }
+//    return end;
+//}
+//void quickSort(int a[],int lb,int ub){
+//    if (lb<ub) {
+//        int loc=partition(a, lb, ub);
+//        quickSort(a,lb,loc-1);
+//        
+//    }
+//}
+
+

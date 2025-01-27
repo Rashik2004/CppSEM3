@@ -5,12 +5,12 @@
 //  Created by Rashik Ghosh on 12/08/24.
 //
 
-//#include <iostream>
-//using namespace std;
-//int main() {
-//    cout << "Hello, World!\n" << endl;
-//    return 0;
-//}
+#include <iostream>
+using namespace std;
+int main() {
+   cout << "Hello, World!\n" << endl;
+   return 0;
+}
 
 //                                               Date: 12/08/2024
 //#include<iostream>
@@ -27,4 +27,10 @@
 //    }
 //    return 0;
 //}
+
+
+
+//#hash table using linked list
+
+
 

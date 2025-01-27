@@ -11,6 +11,8 @@
 		A703B0392C6A7B0900315941 /* CPP with Love_bubbar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A703B0382C6A7B0900315941 /* CPP with Love_bubbar.cpp */; };
 		A703B03C2C6B672F00315941 /* ClassworkCPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A703B03A2C6B672F00315941 /* ClassworkCPP.cpp */; };
 		A703B03E2C6C6E7E00315941 /* CSE202 OOPS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A703B03D2C6C6E7E00315941 /* CSE202 OOPS.cpp */; };
+		A7A517F62CCC273400409105 /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7A517F52CCC272B00409105 /* Stack.cpp */; };
+		A7CF3DB92CF390870014A634 /* Recursion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7CF3DB82CF390870014A634 /* Recursion.cpp */; };
 		A7E98A042C843BEB00CF4AA7 /* Arrays.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7E98A022C843BEB00CF4AA7 /* Arrays.cpp */; };
 /* End PBXBuildFile section */
 
@@ -41,8 +43,10 @@
 		A703B0382C6A7B0900315941 /* CPP with Love_bubbar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "CPP with Love_bubbar.cpp"; sourceTree = "<group>"; };
 		A703B03A2C6B672F00315941 /* ClassworkCPP.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClassworkCPP.cpp; sourceTree = "<group>"; };
 		A703B03D2C6C6E7E00315941 /* CSE202 OOPS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "CSE202 OOPS.cpp"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		A720FC722CC51A2500CC23E6 /* linkedlist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = linkedlist.cpp; sourceTree = "<group>"; };
 		A79EADAC2C7A6B03003705A2 /* DSA_array */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSA_array; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7BF61A92CA5275E00B5596E /* file.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = file.txt; sourceTree = "<group>"; };
+		A7A517F52CCC272B00409105 /* Stack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Stack.cpp; sourceTree = "<group>"; };
+		A7CF3DB82CF390870014A634 /* Recursion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Recursion.cpp; sourceTree = "<group>"; };
 		A7E98A022C843BEB00CF4AA7 /* Arrays.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Arrays.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +92,7 @@
 				A703B0382C6A7B0900315941 /* CPP with Love_bubbar.cpp */,
 				A703B03A2C6B672F00315941 /* ClassworkCPP.cpp */,
 				A703B03D2C6C6E7E00315941 /* CSE202 OOPS.cpp */,
-				A7BF61A92CA5275E00B5596E /* file.txt */,
+				A7CF3DB82CF390870014A634 /* Recursion.cpp */,
 				A7E98A032C843BEB00CF4AA7 /* DSA */,
 			);
 			path = CppSEM3;
@@ -98,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				A7E98A022C843BEB00CF4AA7 /* Arrays.cpp */,
+				A720FC722CC51A2500CC23E6 /* linkedlist.cpp */,
+				A7A517F52CCC272B00409105 /* Stack.cpp */,
 			);
 			path = DSA;
 			sourceTree = "<group>";
@@ -182,7 +188,9 @@
 			files = (
 				A703B03E2C6C6E7E00315941 /* CSE202 OOPS.cpp in Sources */,
 				A703B0322C69B6E600315941 /* main.cpp in Sources */,
+				A7A517F62CCC273400409105 /* Stack.cpp in Sources */,
 				A703B03C2C6B672F00315941 /* ClassworkCPP.cpp in Sources */,
+				A7CF3DB92CF390870014A634 /* Recursion.cpp in Sources */,
 				A703B0392C6A7B0900315941 /* CPP with Love_bubbar.cpp in Sources */,
 				A7E98A042C843BEB00CF4AA7 /* Arrays.cpp in Sources */,
 			);
