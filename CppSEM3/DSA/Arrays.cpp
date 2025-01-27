@@ -295,108 +295,109 @@
 //}
 
 
-//#include <iostream>
-//using namespace std;
-//
-//void push(int stack[], int &top, int max, int x){
-//    if(top>=max-1){
-//        cout<<"stack is overflow";
-//    }else{
-//        top++;
-//        stack[top]=x;
-//        cout<<x<<" pushed"<<endl;
-//    }
-//    
-//}
-//void pop(int stack[], int &top){
-//    if(top<0){
-//        cout<<"underflow";
-//    }
-//    else{
-//        int x = stack[top];
-//        top--;
-//        cout<<x<<"popped"<<endl;
-//    }
-//}
-//void display(int stack[], int &top){
-//    if(top<0){
-//        cout<<"underflow";
-//    }
-//    for(int i=top;i>=0;i--){
-//        cout<<stack[i]<<" ";
-//    }
-//}
-//void peek(int stack[],int &top){
-//    if(top<0){
-//        cout<<"stack empty";
-//    }
-//    else{
-//        cout<<"peek element"<< stack[top];
-//    }
-//}
-//void isEmpty(int &top){
-//    if(top<0){
-//        cout<<"true";
-//    }
-//    else{
-//        cout<<"not empty";
-//    }
-//}
-//
-//int main(){
-//    cout<<"enter the max number of elements ";
-//    int max;
-//    cin>>max;
-//    int stack[max];
-//    int choice;int data;int value;int top=-1;
-//    do{
-//        cout<<"enter your choice "<<endl;
-//        cout<<"1. push"<<endl;
-//        cout<<"2. pop"<<endl;
-//        cout<<"3. display"<<endl;
-//        cout<<"4. peek"<<endl;
-//        cout<<"5. check if empty"<<endl;
-//        cout<<"6. exit"<<endl;
-//        cin>>choice;
-//        switch(choice){
-//            case 1:
-//                cout<<"enter value ";
-//                cin>>value;
-//                push(stack,top,max,value);
-//                cout<<endl;
-//                break;
-//            case 2:
-//                pop(stack,top);
-//                cout<<endl;
-//                break;
-//            case 3:
-//                display(stack,top);
-//                cout<<endl;
-//                break;
-//            case 4:
-//                peek(stack,top);
-//                cout<<endl;
-//                cout<<endl;
-//                break;
-//            case 5:
-//                isEmpty(top);
-//                cout<<endl;
-//                break;
-//            case 6:
-//                cout<<"you chose to exit ";
-//                display(stack,top);
-//                cout<<endl;
-//                break;
-//            default:
-//                cout<<"invalid";
-//                cout<<endl;
-//                display(stack,top);
-//                cout<<endl;
-//                break;
-//        }
-//        
-//    }
-//    while(choice==1 || choice==2 || choice==3|| choice==4 || choice==5);
-//    
-//    return 0;
-//}
+#include <iostream>
+using namespace std;
+
+void push(int stack[], int &top, int max, int x){
+    if(top>=max-1){
+        cout<<"stack is overflow";
+    }else{
+        top++;
+        stack[top]=x;
+        cout<<x<<" pushed"<<endl;
+    }
+    
+}
+void pop(int stack[], int &top){
+    if(top<0){
+        cout<<"underflow";
+    }
+    else{
+        int x = stack[top];
+        top--;
+        cout<<x<<"popped"<<endl;
+    }
+}
+void display(int stack[], int &top){
+    if(top<0){
+        cout<<"underflow";
+    }
+    for(int i=top;i>=0;i--){
+        cout<<stack[i]<<" ";
+    }
+}
+void peek(int stack[],int &top){
+    if(top<0){
+        cout<<"stack empty";
+    }
+    else{
+        cout<<"peek element"<< stack[top];
+    }
+}
+void isEmpty(int &top){
+    if(top<0){
+        cout<<"true";
+    }
+    else{
+        cout<<"not empty";
+    }
+}
+
+int main(){
+    cout<<"enter the max number of elements ";
+    int max;
+    cin>>max;
+    int stack[max];
+    int choice;
+    int value;int top=-1;
+    do{
+        cout<<"enter your choice "<<endl;
+        cout<<"1. push"<<endl;
+        cout<<"2. pop"<<endl;
+        cout<<"3. display"<<endl;
+        cout<<"4. peek"<<endl;
+        cout<<"5. check if empty"<<endl;
+        cout<<"6. exit"<<endl;
+        cin>>choice;
+        switch(choice){
+            case 1:
+                cout<<"enter value ";
+                cin>>value;
+                push(stack,top,max,value);
+                cout<<endl;
+                break;
+            case 2:
+                pop(stack,top);
+                cout<<endl;
+                break;
+            case 3:
+                display(stack,top);
+                cout<<endl;
+                break;
+            case 4:
+                peek(stack,top);
+                cout<<endl;
+                cout<<endl;
+                break;
+            case 5:
+                isEmpty(top);
+                cout<<endl;
+                break;
+            case 6:
+                cout<<"you chose to exit ";
+                display(stack,top);
+                cout<<endl;
+                break;
+            default:
+                cout<<"invalid";
+                cout<<endl;
+                display(stack,top);
+                cout<<endl;
+                break;
+        }
+        
+    }
+    while(choice==1 || choice==2 || choice==3|| choice==4 || choice==5);
+    
+    return 0;
+}
